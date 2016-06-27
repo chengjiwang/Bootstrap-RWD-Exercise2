@@ -1,0 +1,22 @@
+// @import 'mixin';
+// import 自己的變數
+@import "helpers/variables";
+@import "helpers/extend";
+
+@import "components/list";
+@import "components/utilities";
+
+@import "partials/header";
+@import "partials/content";
+
+
+
+body {
+	font-family: $font-primary;
+	// background: url("../images/bg.png") repeat center center;
+	// z-index: -1;
+}
+
+
+
+

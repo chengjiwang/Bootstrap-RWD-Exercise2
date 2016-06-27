@@ -1,0 +1,15 @@
+nav {
+	padding: 30px 0 20px 0;
+	background-color: $header-bgcolor;
+	border-bottom: 1px solid #fff;
+	.logo {
+		float: left;
+		margin: 15px;
+	}
+	.menu {
+		float: right;
+		ul {
+		    line-height: 80px;
+		}
+	}
+}

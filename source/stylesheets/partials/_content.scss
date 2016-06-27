@@ -1,0 +1,42 @@
+.adbox  {
+	.adbox-left {
+		float: left;
+		position: relative;
+		padding-left: 0;
+		padding-right: 0;
+		img {
+			height: 420px;
+		}
+		.adbox-info {
+			position: absolute;
+			right: 10%;
+			bottom: 7%;
+		}
+	}
+	.adbox-right {
+		float: left;
+		background: url("../images/banner-bg.jpg") repeat ;
+  		background-size: cover;
+  		height: 420px;
+  		h1 {
+  			padding: 8% 2%;
+  			font-weight: bold;  			
+  		}
+  		p {
+  			padding: 3% 8%;
+		    margin-bottom: 17%;
+		    line-height: 1.5em;
+		    font-size: 120%;
+  			color: $text-color;
+  		}
+	}
+}
+
+.feature {
+	figure {
+		@extend %padding-offset;
+	}
+	h4 {
+		color: $feature-title;
+	}
+}

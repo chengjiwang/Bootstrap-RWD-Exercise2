@@ -1,0 +1,36 @@
+.list{ 
+    li {
+        display: inline;
+        margin: 10px;
+        text-transform: uppercase;
+        font-weight: bold;    
+        :hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.list-hearder {
+	li {
+		:hover {      
+            color: $link-color-hover;
+        }
+        a {
+        	color: $link-color;
+        	font-family: $font-accent;
+        }
+	}
+}
+
+// ul {
+// 	    line-height: 80px;
+// 	    li {
+// 	        display: inline;
+// 	        margin: 10px;
+// 	        color: $link-color;
+// 	        :hover {
+// 	            text-decoration: none;
+// 	            color: $link-color-hover;
+// 	        }
+// 	    }
+// 	}
