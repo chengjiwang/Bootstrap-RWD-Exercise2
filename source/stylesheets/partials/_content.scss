@@ -24,7 +24,7 @@
   		}
   		p {
   			padding: 3% 8%;
-		    margin-bottom: 17%;
+		    // margin-bottom: 17%;
 		    line-height: 1.5em;
 		    font-size: 120%;
   			color: $text-color;
@@ -36,7 +36,35 @@
 	figure {
 		@extend %padding-offset;
 	}
+	.room {
+		@extend %padding-offset;
+		padding: 15px ;
+		background: $room-bgcolor url("../images/separator-light.png") repeat-x top ;
+		height: 140px;
+		h4 {
+			color: $feature-title;
+			font-family: $font-accent;
+		}
+		p {
+			color: $room-textcolor;
+		}
+	}	
+}
+
+.contact {
+	background-color: #FFF ;
+	padding-top: 2%;
 	h4 {
-		color: $feature-title;
+		color: $contact-title;
+		font-weight : bold;
 	}
+	.blog > div {
+		display: inline-flex;
+		flex-direction: row;
+		& > div {
+			background-color: #DDDAD3;	
+		}
+		
+	}
+
 }

@@ -1,20 +1,20 @@
 // @import 'mixin';
 // import 自己的變數
 @import "helpers/variables";
-@import "helpers/extend";
+@import "helpers/_extend";
 
-@import "components/list";
-@import "components/utilities";
+@import "components/_list";
+@import "components/_utilities";
 
-@import "partials/header";
-@import "partials/content";
+@import "partials/_header";
+@import "partials/_content";
+@import "partials/footer";
 
 
 
 body {
 	font-family: $font-primary;
-	// background: url("../images/bg.png") repeat center center;
-	// z-index: -1;
+	background: url("../images/bg.png") repeat center center;
 }
 
 
