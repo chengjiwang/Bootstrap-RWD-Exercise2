@@ -17,6 +17,13 @@
   color: #fff;
   font-family: "Oswald"; }
 
+.list-footer li :hover {
+  color: #241b18; }
+
+.list-footer li a {
+  color: #ab7d0f;
+  font-family: "Oswald"; }
+
 .img-rwd {
   display: block;
   max-width: 100%;
@@ -27,6 +34,17 @@
   padding-left: 0;
   padding-right: 0; }
 
+.margin-offset {
+  margin-right: -15px; }
+
+.mybtn-primary {
+  color: #fff;
+  background-color: #241b18;
+  border-color: #241b18; }
+  .mybtn-primary:hover {
+    color: #fff;
+    background-color: #4B3A33; }
+
 header {
   padding: 30px 0 20px 0;
   background-color: #241B18;
@@ -35,8 +53,30 @@ header {
     float: left;
     margin: 15px; }
   header ul {
-    line-height: 80px;
+    margin-top: 30px;
     float: right; }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  header .logo {
+    float: none;
+    display: flex;
+    justify-content: center; }
+  header ul {
+    float: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; } }
+
+@media (max-width: 760px) {
+  header .logo {
+    float: none;
+    display: flex;
+    justify-content: center; }
+  header ul {
+    float: none;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center; } }
 
 .adbox .adbox-left {
   float: left;
@@ -76,15 +116,39 @@ header {
 
 .contact {
   background-color: #FFF;
-  padding-top: 2%; }
-  .contact h4 {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .contact h4, .contact h5 {
     color: #7b7b7b;
     font-weight: bold; }
+  .contact .contact-info p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #241b18;
+    margin-bottom: 10%; }
+  .contact .blog h4 {
+    padding-left: 15px; }
   .contact .blog > div {
     display: inline-flex;
     flex-direction: row; }
     .contact .blog > div > div {
       background-color: #DDDAD3; }
+      .contact .blog > div > div p:first-child {
+        padding-top: 10%; }
+      .contact .blog > div > div p:nth-child(2n) {
+        padding-bottom: 20%;
+        font-size: 130%; }
+      .contact .blog > div > div p:last-child > a:hover {
+        color: #af8112;
+        text-decoration: none; }
+      .contact .blog > div > div p:nth-child(2n), .contact .blog > div > div p:last-child > a {
+        color: #4B3A33;
+        font-family: "Oswald";
+        font-weight: bold; }
+
+@media (min-width: 992px) {
+  .contact .blog {
+    background: url("../images/separator-light-vertical.png") repeat-y left; } }
 
 footer {
   background-color: #e2b241;
@@ -117,6 +181,45 @@ footer {
         text-decoration: none;
         line-height: 24px;
         display: block; }
+  footer .email {
+    border: 3px solid #af8112; }
+  footer form button {
+    margin-top: 3%; }
+  footer .social {
+    padding: 5%; }
+    footer .social a {
+      margin-right: 8%; }
+  footer .footer-bottom {
+    background: url("../images/separator-dark.png") repeat-x top;
+    padding: 1% 1% 1.2% 1%; }
+
+@media (min-width: 992px) {
+  footer .showroom {
+    background: url("../images/separator-dark-vertical.png") repeat-y right; }
+  footer .posts {
+    background: url("../images/separator-dark-vertical.png") repeat-y right; }
+  footer .social {
+    background: url("../images/separator-dark.png") repeat-x top; } }
+
+@media (min-width: 768px) {
+  footer .footer-bottom {
+    padding: 2%; }
+    footer .footer-bottom p {
+      margin-left: 3%;
+      float: left; }
+    footer .footer-bottom ul {
+      margin-right: 3%;
+      float: right; } }
+
+@media (max-width: 760px) {
+  footer .footer-bottom {
+    padding: 2%; }
+    footer .footer-bottom p, footer .footer-bottom ul {
+      text-align: center; }
+    footer .footer-bottom p {
+      padding-top: 5px; }
+    footer .footer-bottom ul {
+      padding: 5px; } }
 
 body {
   font-family: "QuattrocentoSans-Regular";

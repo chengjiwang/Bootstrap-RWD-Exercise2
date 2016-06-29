@@ -41,4 +41,65 @@ footer {
 			}
 		}	
 	}
+	.email {
+		border: 3px solid #af8112;
+	}
+	form button {
+		margin-top: 3%;
+	}
+	.social {
+		padding: 5%;
+		a {
+			margin-right: 8%;
+		}
+	}
+	.footer-bottom {
+		background: url("../images/separator-dark.png") repeat-x top ;
+		padding: 1% 1% 1.2% 1%;
+	}
+}
+
+@media(min-width: 992px) {
+	footer{
+		.showroom {
+			background: url("../images/separator-dark-vertical.png") repeat-y right;
+		}
+		.posts {
+			background: url("../images/separator-dark-vertical.png") repeat-y right;
+		}
+		.social {
+			background: url("../images/separator-dark.png") repeat-x top ; 
+		}
+
+	}	
+	
+}
+
+@media(min-width: 768px) {	
+	footer .footer-bottom {
+		padding: 2%;
+		p {
+			margin-left: 3%;
+			float: left;
+		}
+		ul {
+			margin-right: 3%;
+			float: right;
+		}
+	}
+}
+
+@media(max-width: 760px) {	
+	footer .footer-bottom {
+		padding: 2%;
+		p ,ul {	
+			text-align: center;		
+		}
+		p {
+			padding-top: 5px;
+		}
+		ul {
+			padding: 5px;
+		}
+	}
 }

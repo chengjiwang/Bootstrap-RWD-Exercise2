@@ -7,22 +7,39 @@ header {
 		margin: 15px;
 	}
 	ul {
-	    line-height: 80px;
+	    margin-top: 30px;
 	    float: right;
 	}
 }
 
-// @media(min-width: 736px) and (max-width: 992px)  {
-// 	nav {
-// 		.logo {
-// 			float: none;
-// 			display: flex;
-// 			justify-content: center;
-// 		}
-// 		ul {
-// 			float: none;
-// 			display: flex;
-// 			justify-content: space-around;
-// 		}
-// 	}
-// }
+@media(min-width: 768px) and (max-width: 992px)  {
+	header {
+		.logo {
+			float: none;
+			display: flex;
+			justify-content: center;
+		}
+		ul {
+			float: none;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+		}
+	}
+}
+
+@media(max-width: 760px) {
+	header {
+		.logo {
+			float: none;
+			display: flex;
+			justify-content: center;
+		}
+		ul {
+			float: none;
+			display: flex;
+			flex-flow: column wrap;
+			text-align: center;
+		}
+	}
+}

@@ -1,14 +1,14 @@
 <footer>
     <section class="container">
         <div class="row">
-            <div class="col-md-4 showroom">
+            <div class=" col-sm-6 col-md-4 showroom">
                 <h4>VISIT OUR SHOWROOM</h4>
                 <img src="images/show-room.png" alt="show-room" />
                 <p>This is just a place holder, so you can see what the site would look like.</p>
                 <p>760-962-9541</p>
                 <p><a href="#">info@carvedcreations.com</a></p> 
             </div>
-            <div class="col-md-4 posts">
+            <div class=" col-sm-6 col-md-4 posts">
                 <h4>RECENT BLOG POSTS</h4>
                 <ul>
                     <li>
@@ -25,22 +25,34 @@
                     </li>
                 </ul>                                                                                       
             </div>
-            <div id="newsletter" class="col-md-4">
-                <form role="form">
+            <div class="col-md-4">
+                <form role="form" class="col-sm-6 col-md-12">
                     <div class="form-group">
                        <label for="InputEmail1"><h4>JOIN OUR NEWSLETTER</h4></label>
-                       <input type="email" class="form-control" id="InputEmail1" placeholder="Enter Email Address Here For Updates">
+                       <input type="email" class="form-control email"  placeholder="Enter Email Address Here For Updates">
+                       <button type="submit" class="btn mybtn-primary">submit</button>
                     </div>
-                    <button type="submit" id="email-btn" class="btn btn-default">submit</button>
+                    
                 </form>
-                <div id="social">              
+                <div class="col-sm-6 col-md-12 social">              
                     <h4>SOCIAL MEDIA</h4>
                     <a href="#"><img src="images/icon_fb.png" alt="icon_fb" /></a>
-                    <a href="#"><img src="images/icon_g.png" alt="icon_g" /></a> 
-                    <a href="#"><img src="images/icon_t.png" alt="icon_t" /></a>   
+                    <a href="#"><img src="images/icon_g.png" alt="icon_google" /></a> 
+                    <a href="#"><img src="images/icon_t.png" alt="icon_twitter" /></a>   
                 </div>
             </div>  
         </div>
     </section>
-
+    <section class="container footer-bottom"> 
+        <div class="row">
+            <p> &copy; COPYRIGHT 2016. ALL RIGHTS RESERVED.</p>
+            <ul class=" list list-footer">
+                <li><a href="#" class="scroll-link home">home</a></li>
+                <li><a href="#" class="scroll-link">about</a></li>
+                <li><a href="#" class="scroll-link">gallery</a></li>
+                <li><a href="#" class="scroll-link">blog</a></li>
+                <li><a href="#" class="scroll-link">contact</a></li>
+            </ul>
+        </div>
+    </section>
 </footer>

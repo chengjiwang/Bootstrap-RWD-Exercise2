@@ -23,8 +23,7 @@
   			font-weight: bold;  			
   		}
   		p {
-  			padding: 3% 8%;
-		    // margin-bottom: 17%;
+  			padding: 3% 8%;	    
 		    line-height: 1.5em;
 		    font-size: 120%;
   			color: $text-color;
@@ -53,18 +52,57 @@
 
 .contact {
 	background-color: #FFF ;
-	padding-top: 2%;
-	h4 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	h4 ,h5 {
 		color: $contact-title;
 		font-weight : bold;
+		
+	}
+	.contact-info {
+		p {
+			font-size: 24px;
+			font-weight: bold;
+			color: #241b18;
+			margin-bottom: 10%;
+		} 
+	}
+	
+	.blog h4 {
+		padding-left: 15px;
 	}
 	.blog > div {
 		display: inline-flex;
 		flex-direction: row;
-		& > div {
-			background-color: #DDDAD3;	
-		}
 		
+		& > div {
+			background-color: #DDDAD3;
+			p:first-child {
+				padding-top: 10%;
+			}
+			p:nth-child(2n) {
+				padding-bottom: 20%;				
+				font-size: 130%;
+			}
+			p:last-child >a {
+				&:hover {
+					color: $blog-color-hover;
+					text-decoration: none;
+				}
+			}
+			p:nth-child(2n), p:last-child >a{
+				color: $blog-color;
+				font-family: $font-accent;
+				font-weight: bold;
+			}	
+		}	
 	}
+}
 
+@media(min-width: 992px) {
+	.contact{
+		.blog {
+			background: url("../images/separator-light-vertical.png") repeat-y left ;
+		}
+	}	
 }

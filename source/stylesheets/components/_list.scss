@@ -22,15 +22,14 @@
 	}
 }
 
-// ul {
-// 	    line-height: 80px;
-// 	    li {
-// 	        display: inline;
-// 	        margin: 10px;
-// 	        color: $link-color;
-// 	        :hover {
-// 	            text-decoration: none;
-// 	            color: $link-color-hover;
-// 	        }
-// 	    }
-// 	}
+.list-footer {
+    li {
+        :hover {      
+            color: $footerlink-color-hover;
+        }
+        a {
+            color: $footerlink-color;
+            font-family: $font-accent;
+        }
+    }
+}
