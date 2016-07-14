@@ -28,12 +28,19 @@ header {
 	}
 }
 
+
 @media(max-width: 760px) {
 	header {
 		.logo {
 			float: none;
 			display: flex;
-			justify-content: center;
+			justify-content: flex-end;
+			.navbar-toggle {
+				border: 1px solid #E2B241;
+    			.icon-bar {
+    				background-color: #E2B241;
+    			}
+			}
 		}
 		ul {
 			float: none;

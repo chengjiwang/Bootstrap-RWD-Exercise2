@@ -32,22 +32,30 @@
 }
 
 .feature {
-	figure {
-		@extend %padding-offset;
+	.item {
+		&:hover .room {
+			background-color: $room-bgcolor-hover;
+		}
+		figure {
+			overflow: hidden;
+			&:hover img {
+				transition: 0.5s linear;
+	    		transform: scale(1.1);
+			}
+		}
+		.room {
+			padding: 15px ;
+			background: $room-bgcolor url("../images/separator-light.png") repeat-x top ;
+			height: 140px;
+			h4 {
+				color: $feature-title;
+				font-family: $font-accent;
+			}
+			p {
+				color: $room-textcolor;
+			}
+		}	
 	}
-	.room {
-		@extend %padding-offset;
-		padding: 15px ;
-		background: $room-bgcolor url("../images/separator-light.png") repeat-x top ;
-		height: 140px;
-		h4 {
-			color: $feature-title;
-			font-family: $font-accent;
-		}
-		p {
-			color: $room-textcolor;
-		}
-	}	
 }
 
 .contact {
@@ -77,6 +85,7 @@
 		
 		& > div {
 			background-color: #DDDAD3;
+			margin-left: 15px ;
 			p:first-child {
 				padding-top: 10%;
 			}
@@ -96,13 +105,21 @@
 				font-weight: bold;
 			}	
 		}	
+		& > figure {
+			padding-left: 0;
+    		padding-right: 1px;
+		}
 	}
 }
 
 @media(min-width: 992px) {
-	.contact{
-		.blog {
-			background: url("../images/separator-light-vertical.png") repeat-y left ;
-		}
+	.contact .blog {	 
+		background: url("../images/separator-light-vertical.png") repeat-y left ;	
 	}	
+}
+
+@media(max-width: 760px) {
+	.contact .blog >div:last-child {
+		margin-top: 15px;
+	}
 }
